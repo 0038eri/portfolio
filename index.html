@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>portfolio</title>
+    <!--Link-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/p5.min.js"></script>
+</head>
+
+<body>
+
+    <!--    <div id="p5Canvas"></div>-->
+
+    <header class="white" style="padding: 60px 0 100px;">
+
+        <div id="top-wrapper" class="anm">
+
+            <h1>ERIRIN<br>PORTFOLIO</h1>
+
+            <div id="mouse-wrapper">
+
+                <img style="width: 50px;" src="images/mouse.png" alt="">
+
+                <img class="triangle" style="width: 30px;" src="images/triangle.png" alt="">
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <section id="hello" class="wrapper red">
+
+        <div class="content">
+
+            <h2 class="anm">HELLO. <br>MY NAME IS ERIRIN. <br>NICE TO MEET YOU.</h2>
+
+            <img class="anm" src="images/eririn.png" alt="">
+
+            <p class="anm">2001年8月14日生17歳。<br>
+                N高等学校ネットコース2年生。<br>
+                ネットで学校の授業を受けながら、<br>
+                Life is Techスクールやキャンプで、デジタルなモノづくりを学ぶ女子高生。<br>
+                将来クリエイターになることを夢に、日々開発をしている。<br>
+                寿司打のアベレージは¥1500。<br>
+                火曜スクールではWebデザイン、土曜BスクールではUnityを学んでいます。<br>
+                3DCGやメディアアート・映像にも挑戦したいと思っている。</p>
+
+        </div>
+
+    </section>
+
+    <section id="programming" class="wrapper white works">
+
+        <div class="content">
+            <p class="anm" style="padding-left: 30px;">普段は主に、Unityでゲームをつくっていますが、<br>テクノロジア魔法学校でメディアアートなども学んでいます。<br>いつか、VRのインタラクティブなメディアアート作品を<br>UnityやUnreal Engine 4でつくりたい。<br>目標はなんでもさらっと作るエンジニアになることです。</p>
+
+            <h3 class="anm" style="float: right; text-align: right;">I WOULD LIKE TO <br>EXPRESS IT DIGITALLY <br>BY PROGRAMMING.</h3>
+
+            <div class="works-wrapper anm">
+
+                <div class="red name-box">
+                    <h6 id="code-name">プログラミング</h6>
+                </div>
+
+                <div class="gray project-box" style="float: right">
+
+                    <div id="check-code" class="image-box">
+
+                        <a class="slide prev"><img class="slide prev" src="images/prev-red.png" alt=""></a>
+
+                        <a id="code-link" target="_blank"><img class="project" src="" alt=""></a>
+
+                        <a class="slide next"><img class="slide next" src="images/next-red.png" alt=""></a>
+
+                    </div>
+
+                    <p id='code-pragraph'></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="design" class="wrapper red">
+
+        <div class="content">
+
+            <p class="anm" style="padding-right: 30px; text-align: right;">基本はWebデザインの作品です。<br>ときどきグラフィックデザインとか映像とか3DCG とかほんの少しかじります。<br>いつかオールマイティーにカバーできるデザイナーになりたいです。</p>
+
+            <h3 class="anm">DESIGN IS <br>DIFFICULT AND FUN. <br>I LIKE THAT.</h3>
+
+            <div class="works-wrapper anm" style="float: right;">
+
+                <div class="white name-box" style="float: right">
+                    <h6 id="design-name" style="text-align: right">デザイン・アート</h6>
+                </div>
+
+                <div class="deepRed project-box" style="clear: both;">
+
+                    <div id="check-design" class="image-box">
+
+                        <a class="slide prev"><img class="slide prev" src="images/prev-white.png" alt=""></a>
+
+                        <a id="design-link" target="_blank"><img class="project" src="" alt=""></a>
+
+                        <a class="slide next"><img class="slide next" src="images/next-white.png" alt=""></a>
+
+                    </div>
+
+                    <p id="design-pragraph"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="vision" class="wrapper white">
+
+        <div class="content">
+
+            <img class="anm" src="images/future.png" alt="">
+
+            <div id="idea-wrapper">
+
+                <h2 class="anm">I AM <br>DEVELOPING AND CREATING <br>FOR THIS.</h2>
+
+                <p class="anm">いまは、明確な将来の夢があるわけではありません。<br>
+                    そんな私でも、一つ心に決めていることがあります。<br>
+                    私は便利なアプリやサービスで人々の生活を豊かにするより、<br>
+                    ゲームや映画・メディアアートといった、娯楽の世界で<br>
+                    日々の日常から非日常へと誘う時間、<br>
+                    人生の醍醐味の一つである趣味を提供することで、<br>
+                    この世の中を救う手伝いをしたいです。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="wrapper red">
+
+        <div class="anm">
+
+            <h4>MY OTHER SIDE.</h4>
+
+            <p>外部リンクへ飛びます。</p>
+
+            <div class="sns">
+
+                <a target="_blank" href="https://www.facebook.com/0038eri">
+
+                    <h5><i style="" class="fab fa-facebook"></i>FACEBOOK<span>facebook.com/0038eri</span></h5>
+
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com/0038eri/">
+
+                    <h5><i class="fab fa-instagram"></i>INSTAGRAM<span>@0038eri</span></h5>
+
+                </a>
+
+            </div>
+
+            <p style="padding: 40px 0 0; letter-spacing: 1px; font-size: 14px;">Copyright &copy; 2018 Eri Osawa All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/mediaart.js"></script>
+
+</body>
+
+</html>

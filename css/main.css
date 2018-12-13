@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DIN Alternate", Osaka;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+@font-face {
+    font-family: "DIN Alternate";
+    src: local("./fonts/Din Font") url('./font//DIN Alternate Bold');
+}
+
+/*　画面サイズが1280pxからはここを読み込む　*/
+/*　想定サイズ PC 15インチ〜　*/
+
+/*コンテンツ・ラッパー*/
+
+/*全てを囲む*/
+.wrapper {
+    overflow: hidden;
+    padding: 120px 185px;
+}
+
+/*内容を囲む*/
+.content {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    width: 1010px;
+}
+
+/*背景色・文字色指定*/
+
+.white {
+    background-color: #e5e5e4;
+    color: #a93837;
+}
+
+.white h2,
+.white h3 {
+    color: rgba(169, 56, 55, 0.5);
+}
+
+.gray {
+    background-color: #CCC;
+    color: #7F2B2B;
+}
+
+.red {
+    background-color: #a93837;
+    color: #e5e5e4;
+}
+
+.red h2,
+.red h3,
+.red h4 {
+    color: rgba(229, 229, 228, 0.5);
+}
+
+.deepRed {
+    background-color: #7f2b2b;
+    color: #e5e5e4;
+}
+
+/*説明見出し*/
+
+h2 {
+    display: inline-block;
+    line-height: 100px;
+    letter-spacing: 4px;
+    font-size: 60px;
+}
+
+/*作品見出し*/
+
+h3 {
+    z-index: 100;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    line-height: 74px;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+
+p {
+    line-height: 35px;
+    letter-spacing: 2px;
+    font-size: 1.25em;
+    font-weight: normal;
+    font-family: Osaka;
+}
+
+/*作品ラッパー*/
+.works-wrapper {
+    overflow: hidden;
+    position: relative;
+    top: -130px;
+    width: 900px;
+    height: 484px;
+}
+
+/*作品名*/
+
+.name-box {
+    z-index: 50;
+    display: inline-block;
+    width: 400px;
+    height: 120px;
+}
+
+.name-box h6 {
+    padding: 6px 10px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Osaka;
+}
+
+/*作品紹介*/
+
+.project-box {
+    display: inline-block;
+    position: relative;
+    top: -80px;
+    padding: 20px;
+}
+
+.image-box{
+    position: relative;
+}
+
+.image-box img.project{
+    padding: 0 28px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.image-box a.slide{
+    display: inline-block;
+    position: relative;
+    top: -110px;
+    cursor: pointer;
+}
+
+.image-box img.slide{
+    height: 60px;
+}
+
+.image-box a.prev{
+    left: 0;
+}
+
+.image-box a.project{
+    padding: 0 24px;
+}
+
+.image-box a.next{
+    right: 0;
+}
+
+.project-box p{
+    padding-top: 10px;
+    width: 676px;
+    height: 90px;
+    line-height: 18px;
+    font-size: 0.8em;
+}

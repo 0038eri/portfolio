@@ -1,0 +1,279 @@
+@media screen and (min-width:1080px) and (max-width:1380px) {
+
+    /*　画面サイズが960pxから1280pxまではここを読み込む　*/
+    /*　想定サイズ PC 13インチ〜　*/
+
+    /*main.css*/
+
+    /*コンテンツ・ラッパー*/
+
+    /*全てを囲む*/
+    .wrapper {
+        padding: 100px;
+    }
+
+    /*内容を囲む*/
+    .content {
+        width: 880px;
+    }
+
+    /*説明見出し*/
+
+    h2 {
+        line-height: 80px;
+        letter-spacing: 4px;
+        font-size: 50px
+    }
+
+    h3 {
+        top: -30px;
+        line-height: 60px;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+
+    p {
+        line-height: 30px;
+        letter-spacing: 1.4px;
+        font-size: 1em;
+    }
+
+    /*作品ラッパー*/
+    .works-wrapper {
+        top: -130px;
+        width: 770px;
+        height: 420px;
+    }
+
+    /*作品名*/
+
+    .name-box {
+        width: 300px;
+        height: 90px;
+    }
+
+    /*作品紹介*/
+
+    .project-box {
+        top: -40px;
+    }
+
+    .image-box img.project {
+        width: 400px;
+        height: 240px;
+    }
+
+    .project-box p {
+        width: 568px;
+        height: 80px;
+    }
+
+    /*style.css*/
+
+    /*hello*/
+
+    #hello img {
+        top: 100px;
+        width: 350px;
+    }
+
+    /*programming*/
+
+    #programming .content {
+        height: 620px;
+    }
+
+    /*design*/
+
+    #design .content {
+        height: 560px;
+    }
+
+    /*vision*/
+
+    #vision .content {
+        height: 485px;
+    }
+
+    #vision img {
+        width: 880px;
+        height: 420px;
+    }
+
+    #vision #idea-wrapper {
+        top: -420px;
+        margin-bottom: -420px;
+        height: 485px;
+    }
+
+    #vision #idea-wrapper p {
+        bottom: -30px;
+    }
+
+}
+
+@media screen and (min-width:780px) and (max-width:1080px) {
+
+    /*　画面サイズが600pxから960pxまではここを読み込む　*/
+    /*　想定サイズ PCにて小さいタブで開く・iPad Proなどの大きいサイズのタブレット　*/
+
+    /*コンテンツ・ラッパー*/
+
+    /*main.css*/
+
+    /*全てを囲む*/
+    .wrapper {
+        padding: 60px;
+    }
+
+    /*内容を囲む*/
+    .content {
+        width: 660px;
+    }
+
+    /*説明見出し*/
+
+    h2 {
+        line-height: 60px;
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+
+    /*作品見出し*/
+
+    h3 {
+        top: 30px;
+        line-height: 50px;
+        letter-spacing: 1.5px;
+        font-size: 30px;
+    }
+
+    p {
+        line-height: 30px;
+        letter-spacing: 1.5px;
+        font-size: 1em;
+    }
+
+    /*作品ラッパー*/
+    .works-wrapper {
+        top: -50px;
+        width: 600px;
+        height: 354px;
+    }
+
+    /*作品名*/
+
+    .name-box {
+        width: 200px;
+        height: 60px;
+    }
+
+    .name-box h6 {
+        padding: 4px 8px;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+    /*作品紹介*/
+
+    .project-box {
+        top: -30px;
+        padding: 10px;
+    }
+
+    .image-box img.project {
+        width: 300px;
+        height: 180px;
+    }
+
+    .image-box a.slide {
+        top: -80px;
+    }
+
+    .image-box img.slide {
+        height: 40px;
+    }
+
+    .project-box p {
+        width: 440px;
+        height: 110px;
+    }
+
+    /*style.css*/
+
+    /*hello*/
+
+    #hello .content {
+        height: 500px;
+    }
+
+    #hello img {
+        top: -80px;
+        width: 300px;
+    }
+
+    #hello p {
+        top: -110px;
+        padding: 0 0 0 50px;
+    }
+
+    /*programming*/
+
+    #programming .content {
+        height: 604px;
+    }
+
+    /*design*/
+
+    #design .content {
+        height: 544px;
+    }
+
+    /*vision*/
+
+    #vision .content {
+        height: 430px;
+    }
+
+    #vision img {
+        top: 57.5px;
+        width: 660px;
+        height: 315px;
+    }
+
+    #vision #idea-wrapper {
+        top: -310px;
+        margin-bottom: -310px;
+        height: 420px;
+    }
+
+    #vision #idea-wrapper p {
+        bottom: -30px;
+    }
+
+    /*footer*/
+
+    footer h4 {
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+
+    footer p {
+        padding: 40px 0 10px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:780px) {
+
+    /*　画面サイズが480pxからはここを読み込む　*/
+    /*　想定サイズ iPadなどの小さいサイズのタブレット　*/
+}
+
+@media screen and (min-width:180px)and (max-width:480px) {
+
+    /*  画面サイズが480pxまで  */
+    /*　想定サイズ モバイル　*/
+
+}
