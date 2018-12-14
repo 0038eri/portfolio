@@ -300,9 +300,9 @@
     /*作品見出し*/
 
     h3 {
-        top: 0px;
+        top: 40px;
         line-height: 40px;
-        letter-spacing: px;
+        letter-spacing: 1.5px;
         font-size: 30px;
     }
 
@@ -314,47 +314,47 @@
 
     /*作品ラッパー*/
     .works-wrapper {
-        top: px;
-        width: px;
-        height: px;
+        top: 80px;
+        width: 380px;
+        height: 340px;
     }
 
     /*作品名*/
 
     .name-box {
-        width: px;
-        height: px;
+        width: 200px;
+        height: 60px;
     }
 
     .name-box h6 {
-        padding: px px;
-        letter-spacing: px;
-        font-size: px;
+        padding: 4px 8px;
+        letter-spacing: 1px;
+        font-size: 20px;
     }
 
     /*作品紹介*/
 
     .project-box {
-        top: px;
-        padding: px;
+        top: -20px;
+        padding: 8px;
     }
 
     .image-box img.project {
-        width: px;
-        height: px;
+        width: 200px;
+        height: 120px;
     }
 
     .image-box a.slide {
-        top: px;
+        top: -50px;
     }
 
     .image-box img.slide {
-        height: px;
+        height: 30px;
     }
 
     .project-box p {
-        width: px;
-        height: px;
+        width: 316px;
+        height: 150px;
     }
 
     /*style.css*/
@@ -380,9 +380,9 @@
     #programming .content {
         height: px;
     }
-    
-    #programming p{
-        padding-left: 10px;
+
+    #programming p.profile {
+        padding-left: 0px;
     }
 
     /*design*/
@@ -390,9 +390,9 @@
     #design .content {
         height: px;
     }
-    
-    #design p{
-        padding-right: 10px;
+
+    #design p.profile {
+        padding-right: 0px;
     }
 
     /*vision*/
