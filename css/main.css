@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "DIN Alternate", Osaka,'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: "DIN Alternate", Osaka;
 }
 
 html,
@@ -92,7 +92,7 @@ p {
     letter-spacing: 2px;
     font-size: 1.25em;
     font-weight: normal;
-    font-family: Osaka;
+    font-family: Osaka,'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 /*作品ラッパー*/
@@ -118,7 +118,7 @@ p {
     letter-spacing: 2px;
     font-size: 30px;
     font-weight: normal;
-    font-family: Osaka;
+    font-family: Osaka, 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 /*作品紹介*/

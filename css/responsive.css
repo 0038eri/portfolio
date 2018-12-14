@@ -378,7 +378,7 @@
     /*programming*/
 
     #programming .content {
-        height: px;
+        height: 780px;
     }
 
     #programming p.profile {
@@ -388,7 +388,7 @@
     /*design*/
 
     #design .content {
-        height: px;
+        height: 680px;
     }
 
     #design p.profile {
@@ -396,6 +396,27 @@
     }
 
     /*vision*/
+
+    #vision .content {
+        width: 100%;
+        height: 580px;
+    }
+
+    #vision img {
+        top: 50px;
+        width: 100%;
+    }
+
+    #vision #idea-wrapper {
+        margin: auto;
+        width: 380px;
+        height: 580px;
+    }
+
+    #vision #idea-wrapper p {
+        top: 40px;
+        text-align: right;
+    }
 
 
     /*footer*/
