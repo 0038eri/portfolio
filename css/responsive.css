@@ -117,9 +117,9 @@
     /*　画面サイズが600pxから960pxまではここを読み込む　*/
     /*　想定サイズ PCにて小さいタブで開く・iPad Proなどの大きいサイズのタブレット　*/
 
-    /*コンテンツ・ラッパー*/
-
     /*main.css*/
+
+    /*コンテンツ・ラッパー*/
 
     /*全てを囲む*/
     .wrapper {
@@ -263,12 +263,143 @@
         font-size: 14px;
     }
 
+    footer p.c {
+        padding: 30px 0 0;
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (min-width:480px) and (max-width:780px) {
 
     /*　画面サイズが480pxからはここを読み込む　*/
     /*　想定サイズ iPadなどの小さいサイズのタブレット　*/
+
+    /*main.css*/
+
+    /*コンテンツ・ラッパー*/
+
+    /*全てを囲む*/
+    .wrapper {
+        padding: 50px;
+    }
+
+    /*内容を囲む*/
+    .content {
+        width: 380px;
+    }
+
+    /*説明見出し*/
+
+    h2 {
+        line-height: 60px;
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+
+    /*作品見出し*/
+
+    h3 {
+        top: 0px;
+        line-height: 40px;
+        letter-spacing: px;
+        font-size: 30px;
+    }
+
+    p {
+        line-height: 30px;
+        letter-spacing: 1.5px;
+        font-size: 1em;
+    }
+
+    /*作品ラッパー*/
+    .works-wrapper {
+        top: px;
+        width: px;
+        height: px;
+    }
+
+    /*作品名*/
+
+    .name-box {
+        width: px;
+        height: px;
+    }
+
+    .name-box h6 {
+        padding: px px;
+        letter-spacing: px;
+        font-size: px;
+    }
+
+    /*作品紹介*/
+
+    .project-box {
+        top: px;
+        padding: px;
+    }
+
+    .image-box img.project {
+        width: px;
+        height: px;
+    }
+
+    .image-box a.slide {
+        top: px;
+    }
+
+    .image-box img.slide {
+        height: px;
+    }
+
+    .project-box p {
+        width: px;
+        height: px;
+    }
+
+    /*style.css*/
+
+    /*hello*/
+
+    #hello .content {
+        height: 860px;
+    }
+
+    #hello img {
+        top: 40px;
+        width: 280px;
+    }
+
+    #hello p {
+        top: 80px;
+        padding: 0;
+    }
+
+    /*programming*/
+
+    #programming .content {
+        height: px;
+    }
+    
+    #programming p{
+        padding-left: 10px;
+    }
+
+    /*design*/
+
+    #design .content {
+        height: px;
+    }
+    
+    #design p{
+        padding-right: 10px;
+    }
+
+    /*vision*/
+
+
+    /*footer*/
+
 }
 
 @media screen and (min-width:180px)and (max-width:480px) {

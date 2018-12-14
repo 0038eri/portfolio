@@ -56,10 +56,18 @@ header #mouse-wrapper img.triangle {
     height: 750px;
 }
 
+#programming p {
+    padding-left: 30px;
+}
+
 /*design*/
 
 #design .content {
     height: 680px;
+}
+
+#design p {
+    padding-right: 30px;
 }
 
 /*vision*/
@@ -138,6 +146,12 @@ footer a h5 span {
     padding-left: 30px;
     font-weight: normal;
     font-family: Osaka;
+}
+
+footer p.c {
+    padding: 40px 0 0;
+    letter-spacing: 1px;
+    font-size: 14px;
 }
 
 /*anime*/
