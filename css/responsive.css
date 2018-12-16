@@ -158,7 +158,7 @@
     .works-wrapper {
         top: -50px;
         width: 600px;
-        height: 354px;
+        height: 374px;
     }
 
     /*作品名*/
@@ -196,7 +196,7 @@
 
     .project-box p {
         width: 440px;
-        height: 110px;
+        height: 130px;
     }
 
     /*style.css*/
@@ -204,7 +204,7 @@
     /*hello*/
 
     #hello .content {
-        height: 500px;
+        height: 530px;
     }
 
     #hello img {
@@ -226,7 +226,7 @@
     /*design*/
 
     #design .content {
-        height: 544px;
+        height: 594px;
     }
 
     /*vision*/
@@ -316,7 +316,7 @@
     .works-wrapper {
         top: 80px;
         width: 380px;
-        height: 340px;
+        height: 350px;
     }
 
     /*作品名*/
@@ -354,16 +354,10 @@
 
     .project-box p {
         width: 316px;
-        height: 150px;
+        height: 160px;
     }
 
     /*style.css*/
-
-    /*header*/
-
-    header #top-wrapper {
-        top: 130px;
-    }
 
     /*hello*/
 
@@ -394,7 +388,7 @@
     /*design*/
 
     #design .content {
-        height: 680px;
+        height: 700px;
     }
 
     #design p.profile {
@@ -405,7 +399,7 @@
 
     #vision .content {
         width: 100%;
-        height: 580px;
+        height: 640px;
     }
 
     #vision img {
@@ -416,7 +410,7 @@
     #vision #idea-wrapper {
         margin: auto;
         width: 380px;
-        height: 580px;
+        height: 640px;
     }
 
     #vision #idea-wrapper p {
@@ -554,7 +548,7 @@
     /*hello*/
 
     #hello .content {
-        height: 740px;
+        height: 800px;
     }
 
     #hello img {
