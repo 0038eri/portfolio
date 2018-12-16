@@ -13,6 +13,10 @@ header {
     height: 70vh;
 }
 
+header #top-wrapper{
+    position: relative;
+}
+
 header h1 {
     display: block;
     padding-bottom: 30px;
