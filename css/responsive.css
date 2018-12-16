@@ -636,4 +636,9 @@
         font-size: .75em;
     }
 
+    /*anime*/
+    .anm{
+        transform: translateY(80px);
+    }
+
 }
