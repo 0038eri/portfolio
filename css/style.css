@@ -10,7 +10,7 @@ canvas {
 /*header*/
 
 header {
-    height: 70vh;
+    height: 100vh;
 }
 
 header #top-wrapper {
@@ -120,7 +120,7 @@ footer p {
 footer .sns {
     display: block;
     margin: auto;
-    width: 490px;
+    width: 500px;
 }
 
 footer a {
@@ -149,7 +149,7 @@ footer a h5 i {
 footer a h5 span {
     padding-left: 30px;
     font-weight: normal;
-    font-family: Osaka, 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 footer p.c {

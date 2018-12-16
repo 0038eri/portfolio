@@ -5,7 +5,7 @@ var ptouchX;
 var ptouchY;
 
 function setup() {
-    var canvas = createCanvas(displayWidth, displayHeight);
+    var canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent("p5Canvas");
     noStroke();
 }
@@ -26,17 +26,17 @@ function draw() {
     if (sizeMode === 0) {
         for (var i = 0; i < 6; i++) {
             fill(169, 56, 55);
-            ellipse(ptouchX + (random(-10, 10)), ptouchY + (random(-10, 10)), random(1, 10));
+            ellipse(mouseX + (random(-10, 10)), mouseY + (random(-10, 10)), random(1, 10));
         }
     } else if (sizeMode === 1) {
         for (var i = 0; i < 6; i++) {
             fill(169, 56, 55);
-            ellipse(ptouchX + (random(-20, 20)), ptouchY + (random(-20, 20)), random(10, 20));
+            ellipse(mouseX + (random(-20, 20)), mouseY + (random(-20, 20)), random(10, 20));
         }
     } else if (sizeMode === 2) {
         for (var i = 0; i < 6; i++) {
             fill(169, 56, 55);
-            ellipse(ptouchX + (random(-30, 30)), ptouchY + (random(-30, 30)), random(21, 30));
+            ellipse(mouseX + (random(-30, 30)), mouseY + (random(-30, 30)), random(21, 30));
         }
     } else {
         console.log('なにもしない');
@@ -44,13 +44,6 @@ function draw() {
 
 }
 
-function touchMoved() {
-
-    ptouchX = touches[0].x;
-    ptouchY = touches[0].y;
-
-}
-
 function windowResized() {
-    resizeCanvas(displayWidth, displayHeight);
+    resizeCanvas(windowWidth, windowHeight);
 }
