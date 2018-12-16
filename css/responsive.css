@@ -594,6 +594,7 @@
     }
 
     #vision img {
+        top: 160px;
         width: 100%;
         height: auto;
     }
