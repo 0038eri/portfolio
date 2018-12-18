@@ -14,7 +14,6 @@ $(function () {
         $('#mouse-wrapper').css('display', 'none');
         $('#top-wrapper').css('top', '130px');
         
-    } else {
-        
     }
+    
 });
