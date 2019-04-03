@@ -12,8 +12,8 @@ code_minSlideNumber = 0;
 design_minSlideNumber = 0;
 
 // さいご（最大値のスライド）
-code_maxSlideNumber = 1;
-design_maxSlideNumber = 3;
+code_maxSlideNumber = 2;
+design_maxSlideNumber = 4;
 
 slide_code();
 slide_design();
@@ -93,6 +93,9 @@ function slide_code() {
         case 0:
             sketch1();
             break;
+        case 1:
+            AboutHumanBeingoOsawaeri();
+            break;
         default:
             comingSoon_c();
             break;
@@ -111,12 +114,14 @@ function slide_design() {
         case 2:
             nothing();
             break;
+        case 3:
+            graduation2019();
+            break;
         default:
             comingSoon_d();
             break;
     }
 }
-
 
 // プログラミング作品
 
@@ -126,6 +131,14 @@ function sketch1() {
     $("#check-code img.project").attr('src', 'images/projects/code/sketch1.gif');
     $("code-link").removeAttr('href onclick');
     $("#code-paragraph").text("はじめてのProcessingの作品です。黒い背景に、カラフルな円が震えます。マウスクリックすると、背景が白になり、円も止まります。");
+}
+
+function AboutHumanBeingoOsawaeri(){
+    $('#code-name').text('about-human-being-osawaeri');
+    $('#check-code img.project').attr('src','images/projects/code/about-human-being-osawaeri.png');
+    $("#code-link").attr('href', 'https://osawaeri.github.io/about-human-being-osawaeri');
+    $("code-link").removeAttr('onclick');
+    $("#code-paragraph").text("ポートフォリオサイトをリリースしましたが、それだけでは私のことはわからない。p5.jsによるメディアアート表現で「自分自身」についてを表すサイトです。");
 }
 
 // Coming Soon
@@ -144,7 +157,7 @@ function beSerious() {
     $("#check-design img.project").attr('src', 'images/projects/design/be-serious.png');
     $("#design-link").attr('href', 'https://osawaeri.github.io/be-serious./');
     $('#design-link').removeAttr('onclick');
-    $("#design-paragraph").text("Life is Tech!スクールカップの作品で、テーマが「スクールの課題を解決せよ」ということで、実際に社員さんにスクールの課題についてお伺いしました。学校が忙しかったり、やる気が出ないメンバーにむけて、改めてスクールの良さについて伝えるサイトを作り、応募しました。デザインやレスポンシブ対応などを評価していただきました。【Life is Tech!スクールカップ 2018 シルバーアワード受賞】");
+    $("#design-paragraph").text("Life is Tech!スクールカップの作品で、テーマが「スクールの課題を解決せよ」ということで、実際に社員さんにスクールの課題についてお伺いしました。学校が忙しかったり、やる気が出ないメンバーにむけて、改めてスクールの良さについて伝えるサイトを作り、応募しました。デザインやレスポンシブ対応などを評価していただきました。【Life is Tech! スクールカップ2018 シルバーアワード受賞】");
 }
 
 // rainbow.
@@ -161,8 +174,19 @@ function nothing() {
     $('#design-name').text('ないものねだり');
     $('#check-design img.project').attr('src', 'images/projects/design/nothing.jpg');
     $('#design-link').removeAttr('href');
+    $('#modal img').attr('src','images/projects/design/nothing.jpg');
     $('#design-link').attr('onclick', 'displayModal()');
     $('#design-paragraph').text('「ないもの」をテーマにするということで、「ないものねだり」という作品にしました。「恋愛」、「時間」、「金」、「地位」、「友情」。みんな、なにかしらをもっていて、なにかしらをもっていない。互いのものをねだり合う。この世は「ないものねだり」。');
+}
+
+// Graduation 2019
+function graduation2019(){
+    $('#design-name').text('Graduation 2019');
+    $('#check-design img.project').attr('src','images/projects/design/graduation2019_01.png');
+    $('#design-link').removeAttr('href');
+    $('#modal img').attr('src','images/projects/design/graduation2019_02.jpg');
+    $('#design-link').attr('onclick', 'displayModal()');
+        $('#design-paragraph').text('Life is Tech!で卒業メンターさんたちをメンバーで送り出す卒業サプライズ「Graduation 2019」のデザインを担当させていただきました。ロゴをデザインし、そこからTシャツ・ステッカー・DVDレーベル・認定証・謎解き企画ロゴ・謎解き企画予告状兼クロスワード・会全体のスライドをデザインさせていただきました。卒業メンターさんたちを本気で泣かせる、感動させる演出になるように、会全体をデザインさせていただきました。');
 }
 
 
