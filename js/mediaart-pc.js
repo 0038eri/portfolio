@@ -1,8 +1,4 @@
-var sizeMode = 0;
-var colorMode = 0;
-
-var ptouchX;
-var ptouchY;
+var particles = [];
 
 function setup() {
     var canvas = createCanvas(windowWidth, windowHeight);
@@ -10,38 +6,54 @@ function setup() {
     noStroke();
 }
 
-function mousePressed() {
+function draw() {
+    background(229, 229, 228);
 
-    if (sizeMode === 3) {
-        sizeMode = 0;
-    } else {
-        sizeMode++;
+    if (mouseIsPressed) {
+        for (var i = 0; i < 20; i++) {
+            particles.push(new Particle(mouseX, mouseY));
+        }
+    }
+
+    for (var i = 0; i < particles.length; i++) {
+        particles[i].move();
+        particles[i].draw();
+        if (particles[i].lifetime < 0) {
+            particles.splice(i, 1);
+        }
     }
 }
 
-
-function draw() {
-    background(229, 229, 228, 50);
-
-    if (sizeMode === 0) {
-        for (var i = 0; i < 6; i++) {
-            fill(169, 56, 55);
-            ellipse(mouseX + (random(-10, 10)), mouseY + (random(-10, 10)), random(1, 10));
-        }
-    } else if (sizeMode === 1) {
-        for (var i = 0; i < 6; i++) {
-            fill(169, 56, 55);
-            ellipse(mouseX + (random(-20, 20)), mouseY + (random(-20, 20)), random(10, 20));
-        }
-    } else if (sizeMode === 2) {
-        for (var i = 0; i < 6; i++) {
-            fill(169, 56, 55);
-            ellipse(mouseX + (random(-30, 30)), mouseY + (random(-30, 30)), random(21, 30));
-        }
-    } else {
-        console.log('なにもしない');
+class Particle {
+    constructor(x, y) {
+        this.position = createVector(x, y);
+        this.speed = random(5, 10);
+        this.velocity = createVector(0, 0);
+        this.rotation = random(3.5, 6);
+        this.rotateSpeed = 0;
+        this.rotateSpeedAdd = random(-0.001, 0.001);
+        this.size = random(1, 20);
+        this.opacity = 255;
+        this.lifetime = random(30, 60);
     }
 
+    move() {
+        this.speed *= 0.94;
+        this.rotateSpeed += this.rotateSpeedAdd;
+        this.rotation += this.rotateSpeed;
+        this.velocity.x = this.speed * cos(this.rotation);
+        this.velocity.y = this.speed * sin(this.rotation);
+        this.position.add(this.velocity);
+        this.position.y += 1.5;
+        this.size *= 0.995;
+        this.opacity -= 4;
+        this.lifetime--;
+    }
+
+    draw() {
+        fill(169, 56, 55, this.opacity);
+        ellipse(this.position.x, this.position.y, this.size, this.size);
+    }
 }
 
 function windowResized() {
